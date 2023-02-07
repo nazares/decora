@@ -1,5 +1,5 @@
 # Decora
 
-<img src="logo.png">
+<img src="decora_logo.png">
 
 ## A simple PHP MVC framework
