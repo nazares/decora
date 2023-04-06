@@ -1,0 +1,15 @@
+{
+    "name": "nazares/phpmvc",
+    "authors": [
+        {
+            "name": "Sergei Nazarenko",
+            "email": "nazares@icloud.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "require": {}
+}
