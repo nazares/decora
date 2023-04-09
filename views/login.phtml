@@ -1,1 +1,13 @@
+<?php
+/** @var $this \nazares\decoracore\View */
+/** @var $model \app\models\User */
+$this->title = 'Login';
+?>
+
 <h1>Login</h1>
+
+<?php $form =  \nazares\decoracore\form\Form::begin('', 'post') ?>
+<?php echo $form->field($model, 'email') ?>
+<?php echo $form->field($model, 'password')->passwordField() ?>
+<button type="submit" class="btn btn-primary">Submit</button>
+<?php \nazares\decoracore\form\Form::end() ?>

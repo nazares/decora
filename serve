@@ -1,0 +1,5 @@
+#!/usr/bin/php
+
+<?php 
+
+shell_exec('php -S localhost:0 -t public');

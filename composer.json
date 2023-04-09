@@ -8,8 +8,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "app\\": "./"
+            "app\\": "./",
+            "nazares\\": "vendor/nazares"
         }
     },
-    "require": {}
+    "require": {
+        "nazares/phpdotenv": "^1.0",
+        "nazares/decora-core": "^1.0"
+    }
 }

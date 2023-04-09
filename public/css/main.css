@@ -1,6 +1,17 @@
 :root {
     --clr-neutral-200: #555;
 }
+
+@font-face {
+    font-family: 'Amazing Grotesk';
+    src: url('/../assets/fonts/AmazingGrotesk-Ultra.otf');
+}
+
+@font-face {
+    font-family: 'Montserrat Alternatives';
+    src: url('/../assets/fonts/MontserratAlternates-Light.ttf');
+}
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -10,14 +21,22 @@
 nav, ul {
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+nav ul.menu {
+    justify-content: center;
 }
 
 nav {
-    justify-content: space-between;
+    padding: 1rem 0;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav ul li a {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat Alternatives';
     text-decoration: none;
     color: var(--clr-neutral-200);
     font-size: .9rem;
@@ -36,7 +55,8 @@ nav ul li {
 }
 
 .form-group {
-    margin: .5rem 1rem;
+    /* margin: .5rem 1rem; */
+    padding: .5rem;
 }
 
 .form-group label {
@@ -47,7 +67,7 @@ nav ul li {
 .btn {
     border: 2px solid #000;
     padding: .5rem 1rem;
-    margin: .5rem 1rem;
+    margin: 1rem .5rem;
     color: #fff;
     font-weight: bold;
 }
@@ -62,7 +82,7 @@ nav ul li {
 }
 
 .container {
-    margin: 0 1rem;
+    margin: 0 10%;
 }
 
 nav li a:hover {
@@ -75,4 +95,69 @@ form .row {
 
 form .col {
     width: 100%;
+}
+
+.is-invalid {
+    border-color: #f55;
+    background: #f551;
+}
+
+.invalid-feedback {
+    position: absolute;
+    font-family: monospace;
+    font-size: .65rem;
+    color: #f00;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2.3rem;
+    color: #0007;
+
+    font-family: 'Amazing Grotesk';
+    font-weight: 900;
+    width: 100%;
+}
+
+.brand img {
+    margin-right: 1rem;
+}
+
+h1 {
+    font-family: 'Amazing Grotesk';
+}
+
+form {
+    margin: 0 10%;
+}
+
+h3 {
+    padding: 5rem 0 1rem;
+    text-align: center;
+    font-family: 'Amazing Grotesk';
+    font-size: 3rem;
+}
+
+h3 span {
+    display: block;
+    color: #f55;
+}
+
+p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0;
+    line-height: 1.5;
+    font-family: 'Montserrat Alternatives';
+    width: 550px;
+}
+
+.emo {
+    transform: rotate(90deg);
+}
+
+.exception {
+    padding: 0;
 }
