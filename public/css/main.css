@@ -161,3 +161,13 @@ p {
 .exception {
     padding: 0;
 }
+
+.event {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    background: #5F55;
+    font-family: 'Montserrat Alternatives';
+    color: #0008;
+    font-weight: 900;
+}
