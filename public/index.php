@@ -2,8 +2,7 @@
 
 require_once dirname(__DIR__) . "/vendor/autoload.php";
 
-$dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
-$dotenv->load();
+(new \nazares\phpdotenv\Dotenv(dirname(__DIR__)))->load();
 
 use app\controllers\AuthController;
 use app\controllers\SiteController;
