@@ -23,7 +23,7 @@ DB_USER=root
 DB_PASSWORD=secret
 ```
 
-Inside your root folder of your project run the folloving:
+Inside root folder of your project run the folloving:
 
 ```bash
 php migrations.php
