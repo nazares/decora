@@ -13,6 +13,6 @@
     },
     "require": {
         "nazares/decora-core": "^1.0",
-        "vlucas/phpdotenv": "^5.5"
+        "nazares/phpdotenv": "^1.0"
     }
 }
