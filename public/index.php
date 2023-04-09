@@ -19,7 +19,7 @@ $config = [
 
 $app = new Application(dirname(__DIR__), $config);
 $app->on(Application::EVENT_BEFORE_REQUEST, function () {
-    echo "Before request";
+    echo "<div class=\"event\">Event before request</div>";
 });
 
 $app->router->get('/', [SiteController::class, 'home']);
