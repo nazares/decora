@@ -166,8 +166,24 @@ p {
     padding: 0.5rem;
     display: flex;
     justify-content: center;
-    background: #5F55;
+    background: rgba(255, 85, 85, 0.333);
     font-family: 'Montserrat Alternatives';
     color: #0008;
     font-weight: 900;
+}
+
+.alert {
+    border: 1px solid #0002;
+    padding: 1rem 2rem;
+    border-radius: .3rem;
+    box-shadow: 0 0 5px 0 #0001;
+    text-align: center;
+    font-family: 'Montserrat Alternatives';
+    font-size: .8rem;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.alert.alert-success {
+    background: #0f01;
 }
