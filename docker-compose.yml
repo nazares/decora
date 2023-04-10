@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  app:
+    build: ./docker
+    image: nazares/decora
+    ports:
+      - "8080:80"
+    volumes:
+      # Mount source-code for development
+      - ./:/var/www
+  db:
+    image: mysql:8
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: decora
+      MYSQL_USER: decora
+      MYSQL_PASSWORD: decora
