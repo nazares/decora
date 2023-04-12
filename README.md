@@ -2,6 +2,9 @@
 
 Decora is a tiny mvc framework, have been created on educational purpose and don't recommended to production usage.
 
+-
+
+__Related core package: [https://github.com/nazares/decora-core](https://github.com/nazares/decora-core)__
 ![logo](/src/decora_logo.png)
 
 ---
