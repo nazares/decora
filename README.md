@@ -48,7 +48,7 @@ or
 php -S 0.0.0.0:8080 -t public
 ```
 
-Open your browser and check the [localhost](http://localhost:8080)
+Open your browser and check the [](http://localhost:8080)
 
 ## Docker installation
 
@@ -90,8 +90,8 @@ Do migrations
 
 ```bash
 docker-compose exec app php migrations.php
-
-Open your browser and check the [localhost](http://localhost:8080)
 ```
+
+Open your browser and check the [](http://localhost:8080)
 
 That's it!
