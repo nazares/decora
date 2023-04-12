@@ -1,6 +1,6 @@
 # The PHP Framework for Web Applications
 
-Decora is an mvc framework, have been created on educational purpose and don't recommended to production usage.
+Decora is a tiny mvc framework, have been created on educational purpose and don't recommended to production usage.
 
 ![logo](/src/decora_logo.png)
 
@@ -36,7 +36,19 @@ Inside root folder of your project run the following:
 php migrations.php
 ```
 
-Open your browser and check the [http://localhost:8080]
+run server by
+
+```bash
+php serve
+```
+
+or
+
+```bash
+php -S 0.0.0.0:8080 -t public
+```
+
+Open your browser and check the [localhost](http://localhost:8080)
 
 ## Docker installation
 
@@ -79,7 +91,7 @@ Do migrations
 ```bash
 docker-compose exec app php migrations.php
 
-Open your browser and check the [http://localhost:8080]
+Open your browser and check the [localhost](http://localhost:8080)
 ```
 
 That's it!
