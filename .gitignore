@@ -3,5 +3,4 @@ vendor
 .idea
 .history
 composer.lock
-!.gitignore
 .env
