@@ -13,6 +13,7 @@ use nazares\decoracore\Controller;
 use nazares\decoracore\Request;
 use nazares\decoracore\Response;
 use app\models\ContactForm;
+use nazares\decoracore\middlewares\AuthMiddleware;
 
 /**
  * Class SiteController
@@ -22,6 +23,11 @@ use app\models\ContactForm;
  */
 class SiteController extends Controller
 {
+    public function __construct()
+    {
+        $this->registerMidleware(new AuthMiddleware(['profile']));
+    }
+
     public function home()
     {
         $params = [
@@ -43,5 +49,20 @@ class SiteController extends Controller
         return $this->render('contact', [
             'model' => $contact
         ]);
+    }
+
+    public function profile(Request $request)
+    {
+        echo '<pre>';
+        var_dump($request->getRouteParam('id'));
+        echo '</pre>';
+        return $this->render('profile');
+    }
+
+    public function profileWithId(Request $request)
+    {
+        echo '<pre>';
+        var_dump($request->getBody());
+        echo '</pre>';
     }
 }

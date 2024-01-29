@@ -12,33 +12,33 @@ use nazares\decoracore\Application;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $this->title; ?></title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
-<div class="container">
-    <nav>
-        <a href="" class="brand">
-            <img src="assets/images/decora_logo.svg" alt="" height="50">
-            Decora
-        </a>
-        <ul class="menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-        <?php if (Application::isGuest()): ?>
-        <ul>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/register">Register</a></li>
-        </ul>
-        <?php else: ?>
-            <ul>
-                <li><a href="/profile">Profile</a></li>
-                <li><a href="/logout">Welcome <strong><?php echo Application::$app->user->getDisplayName(); ?></strong>
-            <span style="color:#f55">[&nbsp;Logout&nbsp;]</span></a></li>
+    <div class="container">
+        <nav>
+            <a href="" class="brand">
+                <img src="/assets/images/decora_logo.svg" alt="" height="50">
+                Decora
+            </a>
+            <ul class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
-        <?php endif; ?>
-    </nav>
+            <?php if (Application::isGuest()) : ?>
+                <ul>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Register</a></li>
+                </ul>
+            <?php else : ?>
+                <ul>
+                    <li><a href="/profile">Profile</a></li>
+                    <li><a href="/logout">Welcome <strong><?php echo Application::$app->user->getDisplayName(); ?></strong>
+                            <span style="color:#f55">[&nbsp;Logout&nbsp;]</span></a></li>
+                </ul>
+            <?php endif; ?>
+        </nav>
 
         <?php if (Application::$app->session->getFlash('success')) : ?>
             <div class="alert alert-success">
