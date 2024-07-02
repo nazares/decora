@@ -1,0 +1,23 @@
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg viewBox="0 0 1 1.2" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="linearGradient51536" x1="416" x2="594" y1="246" y2="447" gradientTransform="translate(-272,-85)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#61a5b8" offset="0"/>
+<stop stop-color="#ebf7f9" stop-opacity="0" offset="1"/>
+</linearGradient>
+<linearGradient id="linearGradient51545" x1="237" x2="590" y1="297" y2="154" gradientTransform="translate(-272,-85)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#328e9e" offset="0"/>
+<stop stop-color="#fff" stop-opacity="0" offset="1"/>
+</linearGradient>
+<linearGradient id="linearGradient55183" x1="275" x2="613" y1="158" y2="99" gradientTransform="translate(-272,-85)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#328e9e" offset="0"/>
+<stop stop-color="#fff" stop-opacity="0" offset="1"/>
+</linearGradient>
+</defs>
+<g transform="matrix(.0041 0 0 .0041 -.002 -.00043)">
+<path d="m123 142 121 69-120 70z" fill="url(#linearGradient51536)" stroke-opacity=".85"/>
+<path d="m3 73 120 69 0.4 139-120-69z" fill="url(#linearGradient51545)" stroke-opacity=".85"/>
+<path d="m123 3 120 70-120 69-120-69z" fill="url(#linearGradient55183)" stroke-opacity=".85"/>
+<path d="m3 73 120 69 120-69-120-70-120 70v139l120 69 120-70-121-69 0.4 139-0.4-139-120-69" fill="none" stroke="#d3f4f4" stroke-opacity=".61" stroke-width="5"/>
+</g>
+</svg>

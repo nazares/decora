@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+
+<?php
+
+use Clipper\Console;
+
+if (php_sapi_name() !== 'cli') {
+    exit;
+}
+
+require __DIR__ . '/vendor/autoload.php';
+
+$config = [
+    'rootPath' => __DIR__,
+    'theme' => 'unicorn',
+    'version' => '1.0'
+];
+
+$console = new Console($config);
+$console->runCommand($argv);
